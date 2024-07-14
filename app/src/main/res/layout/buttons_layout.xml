@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/buttonallclear"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/silver"
+            android:onClick="borrar"
+            android:text="A/C"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:cornerRadius="100dp" />
+
+        <Button
+            android:id="@+id/buttonclear"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/silver"
+            android:onClick="borrar"
+            android:text="C"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:cornerRadius="100dp" />
+
+        <Button
+            android:id="@+id/buttonpercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/silver"
+            app:cornerRadius="100dp"
+            android:onClick="changeOperator"
+            android:text="%"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/buttondivision"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/Orange"
+            app:cornerRadius="100dp"
+            android:onClick="changeOperator"
+            android:text="÷"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/gray"
+            app:cornerRadius="100dp"
+            android:onClick="selectNumber"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/gray"
+            app:cornerRadius="100dp"
+            android:onClick="selectNumber"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/gray"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:cornerRadius="100dp"
+            android:onClick="selectNumber"
+            android:layout_column="2"
+            android:layout_row="1"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/buttonmultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/Orange"
+            app:cornerRadius="100dp"
+            android:onClick="changeOperator"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/gray"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:cornerRadius="100dp"
+            android:onClick="selectNumber"
+            android:layout_column="0"
+            android:layout_row="2"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/gray"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:cornerRadius="100dp"
+            android:onClick="selectNumber"
+            android:layout_column="1"
+            android:layout_row="2"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/gray"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:cornerRadius="100dp"
+            android:onClick="selectNumber"
+            android:layout_column="2"
+            android:layout_row="2"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/buttonminus"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/Orange"
+            app:cornerRadius="100dp"
+            android:onClick="changeOperator"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/gray"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:cornerRadius="100dp"
+            android:onClick="selectNumber"
+            android:layout_column="0"
+            android:layout_row="3"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/gray"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:cornerRadius="100dp"
+            android:onClick="selectNumber"
+            android:layout_column="1"
+            android:layout_row="3"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/gray"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:cornerRadius="100dp"
+            android:onClick="selectNumber"
+            android:layout_column="2"
+            android:layout_row="3"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/buttonplus"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/Orange"
+            app:cornerRadius="100dp"
+            android:onClick="changeOperator"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/gray"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:cornerRadius="100dp"
+            android:onClick="selectNumber"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_row="4"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/buttondot"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/gray"
+            android:onClick="selectNumber"
+            android:text="."
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:cornerRadius="100dp"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/buttonequals"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/Orange"
+            android:onClick="equals"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:cornerRadius="100dp" />
+
+
+    </GridLayout>
+
+</LinearLayout>
